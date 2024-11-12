@@ -21,6 +21,7 @@ import Radio from "./components/radio/Radio.jsx";
 import Select from "./components/select/Select.jsx";
 import Sidebar from "./components/sidebar/Sidebar.jsx";
 import Table from "./components/table/Table.jsx";
+import Spinner from "./components/spinner/Spinner.jsx";
 
 const router = createBrowserRouter([
   {
@@ -98,6 +99,10 @@ const router = createBrowserRouter([
   {
     path: "/table",
     element: <Table />,
+  },
+  {
+    path: "/spinner",
+    element: <Spinner />,
   },
 ]);
 createRoot(document.getElementById("root")).render(

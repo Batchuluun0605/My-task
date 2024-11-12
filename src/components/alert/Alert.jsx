@@ -1,8 +1,11 @@
 import React from "react";
 import Icon1 from "./Icon1";
 import Icon2 from "./Icon2";
+import { UseFetch } from "../../../custom/UseFetch";
 
 const Alert = () => {
+  const data = UseFetch("https://catfact.ninja/fact");
+  console.log(data);
   return (
     <div
       role="alert"

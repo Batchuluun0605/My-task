@@ -7,7 +7,6 @@ import Text from "./components/text/Text.jsx";
 import Array from "./components/array/Array.jsx";
 import Alert from "./components/alert/Alert.jsx";
 import Login from "./components/form/form.jsx";
-import Button from "./components/buttons/button.jsx";
 import Checkbox from "./components/checkbox/Checkbox.jsx";
 import DetailList from "./components/detail-list/DetailList.jsx";
 import Divider from "./components/divider/Divider.jsx";
@@ -22,11 +21,18 @@ import Select from "./components/select/Select.jsx";
 import Sidebar from "./components/sidebar/Sidebar.jsx";
 import Table from "./components/table/Table.jsx";
 import Spinner from "./components/spinner/Spinner.jsx";
+import ContentHover from "./components/contenthover/ContentHover.jsx";
+import Button from "./components/buttons/Button.jsx";
+import Popup from "./components/popup/Popup.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: (
+      <div>
+        <App />
+      </div>
+    ),
   },
   {
     path: "/text",
@@ -103,6 +109,14 @@ const router = createBrowserRouter([
   {
     path: "/spinner",
     element: <Spinner />,
+  },
+  {
+    path: "/content-hover",
+    element: <ContentHover />,
+  },
+  {
+    path: "/popup",
+    element: <Popup />,
   },
 ]);
 createRoot(document.getElementById("root")).render(

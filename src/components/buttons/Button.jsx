@@ -33,6 +33,18 @@ const Button = () => {
           </button>
         ))}
       </div>
+      <a
+        className="group relative inline-block text-sm font-medium text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+        href="#"
+      >
+        <span className="absolute inset-0 translate-x-1 translate-y-1 bg-indigo-600 transition-transform group-hover:translate-x-0 group-hover:translate-y-0"></span>
+
+        <span className="relative block border border-current bg-white px-8 py-3">
+          {" "}
+          Download{" "}
+        </span>
+      </a>
+      <span className="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r  from-green-300 via-red-500 to-purple-600"></span>
     </section>
   );
 };
